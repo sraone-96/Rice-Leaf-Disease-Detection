@@ -6,7 +6,7 @@ Our aim is to classify the given rice leaf image into one of the given four cate
 Status : Inprogress
 ---------------------
 ## Results Comparison
--------------
+
 For comparison, we use the results from the paper Sethy et al.([link](https://www.sciencedirect.com/science/article/abs/pii/S0168169919326997?via=ihub)) with their best model of using ResNet for feature extraction and SVM on top of it for classification.
 Our models include Inception+attention, ResNet + Attention and VGG + Attention on the same dataset
 
