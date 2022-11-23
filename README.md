@@ -18,12 +18,10 @@ Our models include Inception+attention, ResNet + Attention and VGG + Attention o
 | Tungros  | 52  | 6 |	8 | 84.1 |
 
 ## Dataset
------------
 We use the rice leaf dataset obtained from Sethy et al. [Dataset](https://data.mendeley.com/datasets/fwcj7stb8r/1)
 Dataset consists of 4 classes {Bacterial blight, Blast, Brown spot, Tungro.}
 
 ## Installation
---------------
 ##### Requirements
 ```
 pytorch >= 1.2.0
