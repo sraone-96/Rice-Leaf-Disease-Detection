@@ -3,7 +3,6 @@
 ```
 Our aim is to classify the given rice leaf image into one of the given four categories.
 ```
-Status : Inprogress
 ---------------------
 ## Results Comparison
 
@@ -12,10 +11,11 @@ Our models include Inception+attention, ResNet + Attention and VGG + Attention o
 
 | Method  | ResNet + SVM (original paper) | Inception + Attention | ResNet + Attention	|  VGG + Attention |
 | ------------- | ------------- | ------------ |------------|-------------|
-| Bacterial blight  | 76  |	37 | 56 | 85.3 |
-| Blast  | 51 |	35 | 41 | 89.5 |
-| Brown spot  | 83  | 34 | 46 | 94.8 |
-| Tungros  | 52  | 6 |	8 | 84.1 |
+|Metric | F1 score | F1 score| F1 score| F1 score|
+| Bacterial blight  | 98.38  |	97.27  | 96.76  | 96.35 |
+| Blast  | 96.43  |	96.26 | 95.75  | 94.48 |
+| Brown spot  | 96.70  | 97.67  | 97.55 | 95.39 |
+| Tungros  | 100  | 99.71 |	99.60 | 99.62 |
 
 ## Dataset
 We use the rice leaf dataset obtained from Sethy et al. [Dataset](https://data.mendeley.com/datasets/fwcj7stb8r/1)
@@ -44,7 +44,8 @@ This is for training 30 times with random sampling of data, where each of the 30
 ```
 git clone https://github.com/sraone-96/Rice-Leaf-Disease-Detection.git
 cd Rice-Leaf-Disease-Detection
-python3 dm_project_test_included.py
+python3 train_test_all_models.py
 ```
-**NOTE** : Make sure to have the corresponding image data in the same folder where you are running the code from. And name the folder as `Rice Leaf Disease Images`
+**NOTE** : Make sure to have the corresponding image data in the same folder where you are running the code from. And name the folder as `Rice Leaf Disease Images`. For multi-head attention, change number of heads in the specific model code (eg: VGG_Model.py). Change the model to run in the code by uncommenting the required model.
+
 
